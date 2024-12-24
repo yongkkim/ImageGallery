@@ -19,6 +19,7 @@ Use `npm run <script>` or `yarn <script>` to execute the scripts.
 
 ## Script to create a database and tables
 
+```bash
 CREATE DATABASE PhotoGallery;
 GO
 
@@ -44,3 +45,4 @@ GalleryName NVARCHAR(50) NOT NULL, -- Name of the gallery (required)
 Username NVARCHAR(100) NOT NULL, -- Hashed username (increase size for longer hashes),
 CreatedAt DATETIME DEFAULT GETDATE() -- Automatically track creation timestamp
 );
+```
