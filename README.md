@@ -13,6 +13,8 @@ start: concurrently "npm run frontend" "npm run backend"
 build: Webpack .
 ```
 
+Make sure run `npm install` first :)
+
 ## How to Run Scripts
 
 Use `npm run <script>` or `yarn <script>` to execute the scripts.
