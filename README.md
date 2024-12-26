@@ -1,6 +1,6 @@
 # photo_gallery
 
-A web application to manage photo galleries.
+A web application to display, save, and load your photos.
 
 ## Available Scripts
 

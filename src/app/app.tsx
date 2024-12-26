@@ -1,10 +1,10 @@
-import UploadImage from "../featureComponents/uploadImage/uploadImage";
+import UploadImage from "../featureComponents/selectAndLoadImage/selectAndLoadImage";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState, AppDispatch } from "./store";
 import {
   resetPreviewImages,
   setOpenUploadModal,
-} from "../featureComponents/uploadImage/uploadImageSlice";
+} from "../featureComponents/selectAndLoadImage/selectAndLoadImageSlice";
 import Gallery from "../featureComponents/gallery/gallery";
 import ImageActionsMenu from "../featureComponents/imageActionsMenu/imageActionsMenu";
 import { useEffect, useState } from "react";

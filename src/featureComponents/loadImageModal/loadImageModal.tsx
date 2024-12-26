@@ -7,7 +7,7 @@ import {
   setIsLoaded,
   incrementRequestCount,
   setGalleryName,
-} from "../uploadImage/uploadImageSlice";
+} from "../selectAndLoadImage/selectAndLoadImageSlice";
 import Gallery from "../gallery/gallery";
 import Loading from "../sharedComponents/loading/loading";
 import { debounce } from "lodash";

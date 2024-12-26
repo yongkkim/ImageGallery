@@ -9,7 +9,7 @@ import {
   setIsLoaded,
   setIsSaved,
   setOpenUploadModal,
-} from "../uploadImage/uploadImageSlice";
+} from "../selectAndLoadImage/selectAndLoadImageSlice";
 
 type imageActionsMenu = {
   setIsConfirmOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -21,6 +21,9 @@ const imageActionsMenu: React.FC<imageActionsMenu> = ({
   setIsVisible,
 }) => {
   const images = useSelector((state: RootState) => state.imageContainer.images);
+  const [continueLoad, setContinueLoad] = useState(images.length === 0);
+  const [isGalleryClicked, setIsGalleryClicked] = useState(false);
+  const [isLoadConfirmOpen, setIsLoadConfirmOpen] = useState(true);
   const dispatch = useDispatch<AppDispatch>();
   const buttonText = images.length > 0 ? "Add" : "Begin";
 

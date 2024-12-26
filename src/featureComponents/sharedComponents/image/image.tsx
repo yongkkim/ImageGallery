@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Comment from "../../comment/comment";
-import { deletePreviewImages } from "../../uploadImage/uploadImageSlice";
+import { deletePreviewImages } from "../../selectAndLoadImage/selectAndLoadImageSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState, AppDispatch } from "../../../app/store";
 import ImageMenu from "../../imageMenu/imageMenu";

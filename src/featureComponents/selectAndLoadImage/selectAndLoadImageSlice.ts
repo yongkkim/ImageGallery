@@ -181,6 +181,9 @@ const uploadImageSlice = createSlice({
     resetPreviewImages: (state) => {
       state.previewImages = [];
     },
+    resetImages: (state) => {
+      state.images = [];
+    },
     setOpenUploadModal: (state, action: PayloadAction<boolean>) => {
       state.openUploadModal = action.payload;
     },
@@ -296,5 +299,6 @@ export const {
   setIsSaved,
   incrementRequestCount,
   setGalleryName,
+  resetImages,
 } = uploadImageSlice.actions;
 export default uploadImageSlice.reducer;

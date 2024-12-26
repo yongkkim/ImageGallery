@@ -8,10 +8,10 @@ import {
   setOpenUploadModal,
   setIsPreviewLoading,
   setIsGalleryLoading,
-} from "./uploadImageSlice";
+} from "./selectAndLoadImageSlice";
 import PreviewImage from "../previewImage/previewImage";
 
-const uploadContainer = () => {
+const selectAndLoadContainer = () => {
   const dispatch = useDispatch<AppDispatch>();
   const images = useSelector((state: RootState) => state.imageContainer.images);
   const previewImages = useSelector(
@@ -109,4 +109,4 @@ const uploadContainer = () => {
   );
 };
 
-export default uploadContainer;
+export default selectAndLoadContainer;

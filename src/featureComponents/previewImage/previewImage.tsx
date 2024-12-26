@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState, AppDispatch } from "../../app/store";
 import Image from "../sharedComponents/image/image";
 import Loading from "../sharedComponents/loading/loading";
-import { setIsPreviewLoading } from "../uploadImage/uploadImageSlice";
+import { setIsPreviewLoading } from "../selectAndLoadImage/selectAndLoadImageSlice";
 
 const previewImage = () => {
   const previewImages = useSelector(

@@ -4,9 +4,9 @@ import { RootState, AppDispatch } from "../../app/store";
 import {
   updateImageInfo,
   updatePreviewImageInfo,
-} from "../uploadImage/uploadImageSlice";
+} from "../selectAndLoadImage/selectAndLoadImageSlice";
 import Edit from "../../resource/images/edit.svg";
-import { ImageInfo } from "../uploadImage/uploadImageSlice";
+import { ImageInfo } from "../selectAndLoadImage/selectAndLoadImageSlice";
 
 interface CommentProps {
   image: {

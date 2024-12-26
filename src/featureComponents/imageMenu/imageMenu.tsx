@@ -6,12 +6,12 @@ import {
   deletePreviewImages,
   updateImageInfo,
   updatePreviewImageInfo,
-} from "../uploadImage/uploadImageSlice";
+} from "../selectAndLoadImage/selectAndLoadImageSlice";
 import Favorite from "../../resource/images/heart_emtpy.svg";
 import FavoriteFill from "../../resource/images/heart_fill.svg";
 import Comment from "../../resource/images/comment.svg";
 import Cancel from "../../resource/images/cancelButton.svg";
-import { ImageInfo } from "../uploadImage/uploadImageSlice";
+import { ImageInfo } from "../selectAndLoadImage/selectAndLoadImageSlice";
 
 interface ImageMenuProps {
   image: {

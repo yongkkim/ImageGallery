@@ -1,4 +1,4 @@
-import { ImageInfo } from "../featureComponents/uploadImage/uploadImageSlice";
+import { ImageInfo } from "../featureComponents/selectAndLoadImage/selectAndLoadImageSlice";
 
 export const findImageIndex = (container: Array<ImageInfo>, image: string) => {
   return container.findIndex((item) => (item.name = image));

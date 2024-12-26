@@ -3,7 +3,7 @@ import { RootState, AppDispatch } from "../../app/store";
 import Image from "../sharedComponents/image/image";
 import { adjustGrid } from "../../utils/utils";
 import { useEffect, useRef, useState } from "react";
-import { setIsGalleryLoading } from "../uploadImage/uploadImageSlice";
+import { setIsGalleryLoading } from "../selectAndLoadImage/selectAndLoadImageSlice";
 import Loading from "../sharedComponents/loading/loading";
 
 const gallery: React.FC = () => {

@@ -1,5 +1,5 @@
 import { configureStore, isPlain } from "@reduxjs/toolkit";
-import uploadImageReducer from "../featureComponents/uploadImage/uploadImageSlice";
+import uploadImageReducer from "../featureComponents/selectAndLoadImage/selectAndLoadImageSlice";
 
 const store = configureStore({
   reducer: {

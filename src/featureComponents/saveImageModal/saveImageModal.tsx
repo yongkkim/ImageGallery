@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState, AppDispatch } from "../../app/store";
-import { uploadImages } from "../uploadImage/uploadImageSlice";
+import { uploadImages } from "../selectAndLoadImage/selectAndLoadImageSlice";
 import Loading from "../sharedComponents/loading/loading";
 
 type saveImageModalProps = {
