@@ -1,4 +1,4 @@
-# photo_gallery
+# Photo Gallery
 
 A web application to display, save, and load your photos.
 
