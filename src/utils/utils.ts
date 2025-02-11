@@ -6,13 +6,12 @@ export const findImageIndex = (container: Array<ImageInfo>, image: string) => {
 
 export const adjustGrid = (
   gridItems: HTMLElement[],
-  container: HTMLElement,
-  columnWidth: number
+  container: HTMLElement
 ): void => {
-  const containerWidth = container.offsetWidth;
-  const numberOfColumns = Math.floor(containerWidth / columnWidth);
-  if (numberOfColumns <= 0) return;
+  //checking if images are loaded
+  if (container.childElementCount === 0) return;
 
+  //dynamically adjusts the grid row span based on the image height
   gridItems.forEach((item, index) => {
     const itemHeight = item.querySelector("img")?.offsetHeight ?? 0;
 

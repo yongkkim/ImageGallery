@@ -27,6 +27,7 @@ const gallery: React.FC = () => {
     }
   }, [loadedCount, images]);
 
+  //check uploaded images with various sizes and re-draw grid with images to remove extra vertical spaces inbetween images.
   useEffect(() => {
     if (!containerRef.current) return;
     const container = containerRef.current;
@@ -34,14 +35,15 @@ const gallery: React.FC = () => {
       container.querySelectorAll(".grid-item")
     ) as HTMLElement[];
     const images = container.querySelectorAll("img");
-    const adjust = () => adjustGrid(gridItems, container, 350);
+    // set "adjust" function that will be used to set span for each image
+    const adjust = () => adjustGrid(gridItems, container);
 
     // Add a slight delay to ensure DOM updates are complete
     images.forEach((img) => {
       img.onload = () => adjust();
     });
 
-    // Adjust grid on window resize
+    // attaches a resize event listener to the window, which calls adjust() whenever the screen size changes
     window.addEventListener("resize", adjust);
     return () => window.removeEventListener("resize", adjust);
   }, [images]);
