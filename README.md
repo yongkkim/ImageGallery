@@ -2,6 +2,18 @@
 
 A web application to display, save, and load your photos.
 
+- Uploading and organizing photos into galleries
+- Marking favorite photos
+- Adding comments to images
+- Responsive layout with dynamic grid adjustments
+
+## Technology Stack
+
+- **Frontend:** React, Redux Toolkit, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** SQL Server
+- **Build Tools:** Webpack
+
 ## Installation
 
 1. Clone this repository:
@@ -38,6 +50,11 @@ build: Webpack .
 Use `npm run <script>` or `yarn <script>` to execute the scripts.
 
 ## Setting Up the Database (SQL Server)
+
+The database consists of two tables:
+
+- **Galleries**: Stores gallery information (name, username, creation date).
+- **Images**: Stores image metadata (name, associated gallery, upload date, etc.).
 
 1. Open **SQL Server Management Studio (SSMS)**.
 2. Connect to your SQL Server instance.
